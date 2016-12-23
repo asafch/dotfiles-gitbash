@@ -5,11 +5,7 @@ cd "$(dirname "${BASH_SOURCE}")";
 git pull origin master;
 
 function doIt() {
-	rsync --exclude ".git/" \
-		--exclude "bootstrap.sh" \
-		--exclude "README.md" \
-		--exclude "LICENSE.txt" \
-		-avh --no-perms . ~;
+	cp .* ~;
 	source ~/.bash_profile;
 }
 
@@ -21,6 +17,5 @@ else
 	if [[ $REPLY =~ ^[Yy]$ ]]; then
 		doIt;
 	fi;
-	source $HOME/.macos
 fi;
 unset doIt;
