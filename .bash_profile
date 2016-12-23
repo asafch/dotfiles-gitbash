@@ -38,3 +38,10 @@ done;
 
 # Launch ssh-agent so all the SSH keys stored in your Keychain will be loaded
 eval `ssh-agent -s` > /dev/null 2> /dev/null
+ssh-add ~/.ssh/id_rsa > /dev/null 2> /dev/null
+
+# Add MongoDB to the shell
+export PATH=/c/Program\ Files/MongoDB/Server/3.4/bin:$PATH
+
+# Add F# to the shell
+export PATH="/c/Program\ Files\ (x86)/Microsoft\ SDKs/F#/4.0/Framework/v4.0":$PATH
