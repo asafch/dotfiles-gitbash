@@ -26,3 +26,10 @@ export LESS_TERMCAP_md="${yellow}";
 
 # Don’t clear the screen after quitting a manual page. This prevents downward scrolling with the trackpad.
 # export MANPAGER='less -X';
+
+
+# Add MongoDB to the shell
+export PATH=/c/Program\ Files/MongoDB/Server/3.4/bin:$PATH
+
+# Add F# to the shell
+export PATH="/c/Program\ Files\ (x86)/Microsoft\ SDKs/F#/4.0/Framework/v4.0":$PATH
